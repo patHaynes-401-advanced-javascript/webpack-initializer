@@ -2,11 +2,11 @@ const { execSync } = require('child_process');
 
 function installer(path, arr, dev) {
   console.log('Installer Started')
-  arr.forEach(dependency => execSync(`${dev ? '-D' : ''} ${dependency}`, {
+  execSync(`npm i ${dev ? '-D' : ''} ${arr.join(' ')}`, {
     cwd: path,
     stdio: 'inherit'
-  }));
-    console.log('installer finished');
+  });
+  console.log('installer finished');
 }
 
 module.exports = installer;

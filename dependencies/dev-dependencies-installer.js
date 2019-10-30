@@ -1,5 +1,4 @@
-const { installer } = require('./installer');
-const fe = require('fs');
+const installer = require('./installer');
 
 const devDependencies = [
   '@babel/core',

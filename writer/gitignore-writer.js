@@ -1,9 +1,9 @@
-const { writeJson } = require('./writer');
+const writeFile = require('./writer').write;
 const fs = require('fs');
 
-function write(path) {
-  const data = fs.readFileSync('files-to-copy/.gitignore.js', 'utf8')
-  write(data, path + '/src/.gitignore.js')
+async function write(path) {
+  const data = await fs.readFileSync('./files-to-copy/.gitignore', 'utf8')
+  writeFile(data, path + '/src/.gitignore')
 }
 
 module.exports = write; 

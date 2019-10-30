@@ -1,10 +1,9 @@
-const { writeJson } = require('./writer');
+const writeFile = require('./writer').write;
 const fs = require('fs');
 
-function write() {
-  const data = fs.readFileSync('files-to-copy/src/index.html', 'utf8')
-  write(data, path + './index.html')
-  write('', path + '/src/index.js')
+async function write(path) {
+  const data = await fs.readFileSync('./files-to-copy/src/index.html', 'utf8')
+  writeFile(data, path + '/src/index.html')
 }
 
 module.exports = write; 
