@@ -1,0 +1,29 @@
+{
+  "name": "react-pat-haynes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "jest": "jest --runInBand",
+    "test": "npm run jest -- --coverage",
+    "test:watch": "npm run jest -- --watchAll",
+    "test:verbose": "npm run test -- --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patHaynes-401-advanced-javascript/webpack-initializer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patHaynes-401-advanced-javascript/webpack-initializer/issues"
+  },
+  "homepage": "https://github.com/patHaynes-401-advanced-javascript/webpack-initializer#readme",
+  "devDependencies": {
+    "eslint": "^6.6.0",
+    "jest": "^24.9.0"
+  }
+}
