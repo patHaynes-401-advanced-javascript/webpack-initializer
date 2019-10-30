@@ -2,7 +2,7 @@ const installer = require('./installer');
 
 const devDependencies = [
   '@babel/core',
-  '@babel/plugin-proposal-class-properties', 
+  '@babel/plugin-proposal-class-properties',
   '@babel/preset-env',
   '@babel/preset-react',
   'autoprefixer',
@@ -30,10 +30,10 @@ const devDependencies = [
   'webpack',
   'webpack-cli',
   'webpack-dev-server'
-]
+];
 
 function installDependencies(path) {
-  installer(path, devDependencies, true)
+  installer(path, devDependencies, true);
 }
 
 module.exports = installDependencies; 

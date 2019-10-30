@@ -13,7 +13,7 @@ const path = '.';
 const fs = require('fs');
 console.log(path);
 
-if (path !== '.') fs.mkdirSync(path);
+if(path !== '.') fs.mkdirSync(path);
 fs.mkdirSync(`${path}/src`);
 
 
@@ -26,7 +26,7 @@ Promise.all([
   srcIndex(path),
   travis(path),
 ])
-.then(() => {
-  devDependencies(path),
-  dependencies(path)
-});
+  .then(() => {
+    devDependencies(path),
+    dependencies(path);
+  });

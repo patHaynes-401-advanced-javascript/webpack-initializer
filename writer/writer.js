@@ -1,7 +1,7 @@
 const fs = require('fs');
 
 function write(str, path) {
-  fs.writeFileSync(path, str)
+  fs.writeFileSync(path, str);
   console.log(path);
 }
 
