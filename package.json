@@ -1,61 +1,29 @@
 {
-  "name": "express-reference-server",
+  "name": "react-pat-haynes",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
-  "directories": {
-    "lib": "lib"
-  },
+  "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
     "jest": "jest --runInBand",
     "test": "npm run jest -- --coverage",
     "test:watch": "npm run jest -- --watchAll",
-    "test:verbose": "npm run test -- --verbose",
-    "start": "node server.js",
-    "start:watch": "nodemon server.js",
-    "load:cats": "mongoimport --db famous-cats --collection cats --drop --jsonArray --file ./data/cats.json"
+    "test:verbose": "npm run test -- --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patHaynes-401-advanced-javascript/webpack-initializer.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "dotenv": "^8.1.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.7.1",
-    "morgan": "^1.9.1"
+  "bugs": {
+    "url": "https://github.com/patHaynes-401-advanced-javascript/webpack-initializer/issues"
   },
+  "homepage": "https://github.com/patHaynes-401-advanced-javascript/webpack-initializer#readme",
   "devDependencies": {
-    "@babel/core": "^7.6.4",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.6.3",
-    "@babel/preset-react": "^7.6.3",
-    "@shelf/jest-mongodb": "^1.1.1",
-    "autoprefixer": "^9.7.0",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.0.6",
-    "clean-webpack-plugin": "^3.0.0",
-    "css-loader": "^3.2.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
-    "enzyme-to-json": "^3.4.3",
     "eslint": "^6.6.0",
-    "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-react": "^7.16.0",
-    "file-loader": "^4.2.0",
-    "jest": "^24.9.0",
-    "nodemon": "^1.19.2",
-    "prettier": "^1.18.2",
-    "supertest": "^4.0.2"
-  },
-  "jest": {
-    "preset": "@shelf/jest-mongodb",
-    "setupFilesAfterEnv": [
-      "<rootDir>/e2e/setup.js"
-    ]
-  },
-  "prettier": {
-    "singleQuote": true
+    "jest": "^24.9.0"
   }
 }
